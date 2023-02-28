@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <h3>Weather app</h3> --><img  id="weather-image" style="height: 30px;" src="./images/text-1677556835524.png" alt="">
+       <nav>
+       
+        <form class="input">
+            
+            <input required type="text" placeholder="Search city...">
+            <button type="submit" id="submit-btn">submit</button>
+        </form>
+        <!-- <div class="name-sec">
+            
+        </div> -->
+        <div class="btn-sec">
+            <button class="dark-btn">dark mode</button>
+            <button class="light-btn">light mode</button>
+        </div>
+       </nav>
+
+    <div class="hero-sec">
+        <div class="box">
+            <span class="week"> <h3 id="day">region</h3> <h3 id="time">localtime</h3></span>
+            <div class="logo">
+               <span class="sunset-sec">
+                <h3 id="moonrise">moonrise:</h3>
+                <h3 id="moonset">moonset:</h3>
+                <h3 id="Sunrise">Sunrise:</h3>
+                <h3 id="sunset">Sunset:</h3>
+               
+               </span>
+                <h1 id="country">country</h1> <h1 id="city"> city</h1>
+            </div>
+           <span class="image-sec" > <h5 id="celcius">TEMP:</h5> <span class="sunny-sec"><p id="sunnytext"></p><img id="changeimg" src="./images/Screenshot_20230227_190713.png" alt=""></span></span>
+              </div>
+           </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
