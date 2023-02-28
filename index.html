@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather app</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <!-- <h3>Weather app</h3> --><img  id="weather-image" style="height: 30px;" src="./images/text-1677556835524.png" alt="">
-       <nav>
+      <marquee behavior="alternate" scrollamount="8"  direction=""> <h1 id="weather-text">Weather app</h1>  </marquee>
+        <!-- <img  id="weather-image" style="height: 30px;" src="./images/text-1677556835524.png" alt=""> -->
+       <nav data-aos="zoom-in">
        
         <form class="input">
             
@@ -23,11 +25,21 @@
         <div class="btn-sec">
             <button class="dark-btn">dark mode</button>
             <button class="light-btn">light mode</button>
+            <button class="color-btn">color mode</button>
         </div>
        </nav>
 
     <div class="hero-sec">
-        <div class="box">
+        <div class="day-sec" data-aos="zoom-in">
+            <button class="mon-btn"><p>monday</p> <p>33 <sup>o</sup></p></button>
+            <button class="tue-btn"><p>tuesday</p> <p>32 <sup>o</sup></p></button>
+            <button class="wed-btn"><p>wednasday</p> <p>34 <sup>o</sup></p></button>
+            <button class="thu-btn"><p>thursday</p> <p>32 <sup>o</sup></p></button>
+            <button class="fry-btn"><p>fryday</p> <p>35 <sup>o</sup></p></button>
+            <button class="sat-btn"><p>satday</p> <p>33 <sup>o</sup></p></button>
+            <button class="sun-btn"><p>sunday</p> <p>32 <sup>o</sup></p></button>
+        </div>
+        <div class="box " data-aos="zoom-in-up">
             <span class="week"> <h3 id="day">region</h3> <h3 id="time">localtime</h3></span>
             <div class="logo">
                <span class="sunset-sec">
@@ -39,10 +51,14 @@
                </span>
                 <h1 id="country">country</h1> <h1 id="city"> city</h1>
             </div>
-           <span class="image-sec" > <h5 id="celcius">TEMP:</h5> <span class="sunny-sec"><p id="sunnytext"></p><img id="changeimg" src="./images/Screenshot_20230227_190713.png" alt=""></span></span>
+           <span class="image-sec" > <h5 id="celcius">TEMP:</h5> <span class="sunny-sec"><p id="sunnytext"></p><img id="changeimg" src="" alt=""></span></span>
               </div>
            </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="main.js"></script>
 </body>
 </html>

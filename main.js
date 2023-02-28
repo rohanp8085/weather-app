@@ -1,5 +1,6 @@
 const darkbtn = document.querySelector(".dark-btn")
 const lightbtn = document.querySelector(".light-btn")
+const colorbtn = document.querySelector(".color-btn")
 const container = document.querySelector(".container")
 const form = document.querySelector("form")
 const input = document.querySelector("input")
@@ -16,6 +17,8 @@ const moonset = document.querySelector("#moonset")
 // console.log(sunrise)
 const sunset = document.querySelector("#sunset")
 const box = document.querySelector(".box")
+const weathertext = document.querySelector("#weather-text")
+const daysec = document.querySelector(".day-sec")
 // const weatherimage = document.querySelector("#weather-image")
 
 // console.log(weatherimage)
@@ -25,22 +28,25 @@ const box = document.querySelector(".box")
 darkbtn.addEventListener('click', changeColore)
 function changeColore() {
     container.style.backgroundColor = "black"
-    box.style.backgroundColor = " rgb(191, 214, 239)"
+    box.style.backgroundColor = "white"
     box.style.color = "black"
-    
+    weathertext.style.color = "white"
+    daysec.style.backgroundColor = "white"
 }
 lightbtn.addEventListener('click', lightmode)
 function lightmode() {
     container.style.backgroundColor = "white"
     box.style.backgroundColor = "black"
     box.style.color = "white"
-//    const  newhone = document.createElement("h1")
-// //    console.log(newhone)
-//    newhone.innerText = "weather app"
-//    newhone.style.color = "black"
-
-//    weatherimage.appendChild(newhone)
-
+    weathertext.style.color = "black"
+}
+colorbtn.addEventListener('click', colormode)
+function colormode() {
+    container.style.backgroundColor = "rgb(149, 203, 239)"
+    box.style.backgroundColor = " black"
+    box.style.color = "white"
+    // daysec.style.backgroundColor = " black"
+    // daysec.style.color = "white"
 }
 
 async function weatherReport(e) {
