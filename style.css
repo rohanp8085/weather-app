@@ -273,7 +273,7 @@ input:hover{
         width: 100%;
         /* align-items: center; */
         /* justify-content: center; */
-        height: 200vh;
+        height: 230vh;
         padding: 5px;
     }
     nav{
@@ -286,17 +286,19 @@ input:hover{
     }
     .input{
         width: 100%;
-        height: 150px;
+        height: 180px;
         /* margin-right: 50px; */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        padding: 15px;
         /* text-align: center; */
         
     }
     input{
         width: 100%;
+        height: 50px;
         margin-left: 0px;
     }
     .btn-sec{width: 100%;
@@ -311,7 +313,7 @@ input:hover{
         align-items: center;
         justify-content: space-between;
         height: 150vh;
-        padding: 5px;
+        padding: 15px;
     }
     .day-sec{width: 100%;
         display: flex;
